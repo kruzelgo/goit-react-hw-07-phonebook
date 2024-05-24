@@ -1,0 +1,17 @@
+.button {
+  background-color: #5a7599;
+  color: #fff;
+  border-color: #5a7599;
+  box-shadow: 5px 7px 24px -17px rgb(0, 0, 0);
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 1px 10px;
+}
+.button:hover,
+.button:focus {
+  background-color: darkcyan;
+}
+
+.filterContainer {
+  margin: 10px;
+}
