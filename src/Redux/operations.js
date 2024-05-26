@@ -17,7 +17,6 @@ export const fetchContacts = createAsyncThunk(
       const response = await axios.get('/contacts');
       const contacts = response.data;
 
-      // Check if contacts are empty and add initial contacts if necessary
       if (contacts.length === 0) {
         await Promise.all(
           initialContacts.map(contact => axios.post('/contacts', contact))

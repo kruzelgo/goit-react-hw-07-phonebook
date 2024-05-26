@@ -48,14 +48,15 @@ const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        // height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 35,
         color: '#5a8f99',
-        fontWeight: 'bolder',
+        // fontWeight: 'bolder',
+        fontVariant: 'small-caps',
       }}
     >
       <h1>Phonebook</h1>
