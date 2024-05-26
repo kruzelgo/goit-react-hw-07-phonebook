@@ -5,6 +5,7 @@
   font-variant: small-caps;
   padding: 0;
 }
+
 .buttonDelete {
   background-color: #5a7599;
   font-variant: small-caps;
@@ -20,11 +21,9 @@
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-
   --dur: 0.15s;
   --delay: 0.15s;
   --radius: 16px;
-
   transition: border-top-left-radius var(--dur) var(--delay) ease-out,
     border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
     border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
@@ -33,6 +32,7 @@
     transform calc(var(--dur) * 4) ease-out,
     background calc(var(--dur) * 4) steps(4, jump-end);
 }
+
 .buttonDelete:hover,
 .buttonDelete:focus {
   background-color: darkcyan;
@@ -43,12 +43,6 @@
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
-/*
-.li {
-  margin-bottom: 30px;
-  padding: 0;
-
-} */
 
 .text {
   margin: 0;
@@ -69,4 +63,24 @@
 .item:nth-child(odd) .text {
   color: #5a7599;
   font-weight: 700;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted #5a7599;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
 }

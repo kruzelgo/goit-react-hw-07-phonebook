@@ -1,4 +1,3 @@
-// selector.js
 import { createSelector } from 'reselect';
 
 export const selectContacts = state => state.contacts.items;
